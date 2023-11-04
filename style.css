@@ -90,7 +90,7 @@ h3{
 }
 
 .side-bar{
-    width: 220px;
+    width: 250px;
     height: 100vh;
     position: fixed;
     display: flex;
@@ -122,5 +122,5 @@ nav li a:hover{
 }
 
 .content{
-    margin-left: 260px;
+    margin-left: 300px;
 }

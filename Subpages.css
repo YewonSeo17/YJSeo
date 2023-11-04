@@ -4,17 +4,19 @@
 
 body{
     width: 90%;
-    margin: 20px auto 20px auto;
+    align-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     background-color: #F5F3EF;
 }
 
 .content{
-    margin-left: 260px;
+    margin-left: 300px;
 }
 
 .side-bar{
-    width: 220px;
+    width: 250px;
     height: 100vh;
     position: fixed;
     display: flex;
