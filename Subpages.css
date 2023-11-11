@@ -40,11 +40,27 @@ nav li a{
     display: block;
     padding: 0.6rem 0.3rem;
     font-weight: 400;
-    transition: all ease-out 250ms;
+    position: relative;
+    z-index: 1;
 }
 
-nav li a:hover{
-    color: rgb(224, 187, 0);
+nav li a::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: hsla(55, 89%, 56%, 0.845);
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+nav li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
 }
 
 h3{
