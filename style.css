@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 90%; height: 100%;
+    align-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F3EF;
+
+}
+
+img:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+#me{
+    height: 300px;
+    width: 300px;
+    background-image: url('images/me.png');
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+.introduction{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+h1{
+    font-size:80px;
+    margin: 0;
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+h3{
+    font-size: 20px;
+}
+
+#introduction{
+    padding-right: 10px;
+    border-right: 3px dotted black;
+}
+
+.Architecture{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 15px;
+    border-bottom: 3px solid black;
+}
+
+#archThought{
+    padding-right: 10px;
+    border-right: 3px dotted black;
+}
+
+#archImage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 300px;
+    background-image: url('images/Cover.png');
+    background-position: center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+}
+
+.personal{
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+.side-bar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid black;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0.6rem 0.3rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+nav li a::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: hsla(55, 89%, 56%, 0.845);
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+nav li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+.content{
+    margin-left: 300px;
+}
