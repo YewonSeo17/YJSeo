@@ -68,3 +68,10 @@ h3{
     padding-bottom: 20px;
     border-bottom: 3px solid black;
 }
+
+.matches{
+    display: grid;
+    grid-template-columns: 47% 53%;
+    gap: 10px;
+    padding-bottom: 10px;
+}
