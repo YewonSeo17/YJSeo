@@ -1,2 +1,2 @@
-# YJSeo
-Architecture Portfolio of Yewon Joshua Seo
+# Yewon Seo
+Architecture Portfolio of Yewon Seo
